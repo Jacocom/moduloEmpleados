@@ -18,7 +18,7 @@ class notascontab_model extends Odbc {
     DESCRIPCION: realiza la consulta de la lista de empleados para mostrar en el listado de la vista.
   ******************************************************************************/
   function getLsitadoEmpleados(){
-    $consulta = "SELECT e.nombre nombemp, e.email emailemp, case e.sexo  when 'M' then 'Masculino' else 'Femenino' end as sexo, a.nombre area, e.boletin boletin FROM empleado e JOIN areas a ON(e.area_id = a.id) JOIN empleado_rol e_r ON (e.id = e_r.empleado_id) JOIN roles r ON (r.id = e_r.rol_id);";
+    $consulta = "SELECT distinct e.nombre nombemp, e.email emailemp, case e.sexo  when 'M' then 'Masculino' else 'Femenino' end as sexo, a.nombre area, e.boletin boletin FROM empleado e JOIN areas a ON(e.area_id = a.id) JOIN empleado_rol e_r ON (e.id = e_r.empleado_id) JOIN roles r ON (r.id = e_r.rol_id);";
     $this->consultar($consulta, __FUNCTION__);
   }
   /******************************************************************************

@@ -32,13 +32,9 @@ define('RUTA_RECURSOS', '/application/');
 define("INICIAR_SIMULADOR", false);
 
 
-define("ODBC", ''); 
-define("ODBC_USER", '');
-define("ODBC_PASS", '');
-
-define("ODBCMYSQL", ''); 
-define('ODBC_USERMYSQL', '');
-define('ODBC_PASSMYSQL', '');
+define("ODBCMYSQL", 'prueba_tecnica_dev'); 
+define('ODBC_USERMYSQL', 'root');
+define('ODBC_PASSMYSQL', 'jacocom2032');
 
 
 ?>
