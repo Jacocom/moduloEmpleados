@@ -32,20 +32,13 @@ define('RUTA_RECURSOS', '/application/');
 define("INICIAR_SIMULADOR", false);
 
 
-/* Se deben usar las constantes del archivo que posee las credenciales ODBC Y FTP 'connection2.php' para la conexion a la base de datos.
-  Si necesita usar mas de una conexion diferente puede agregar mas constantes */
-/*define("ODBC", 'ifxibgdir'); //ifxibgdir ifx10064
-define("ODBC_USER", 'informix');
-define("ODBC_PASS", 'poseidon');*/
+define("ODBC", ''); 
+define("ODBC_USER", '');
+define("ODBC_PASS", '');
 
-define("ODBC", 'ifxibgdir'); //ifxibgdir   //ifx7758
-define("ODBC_USER", 'informix');
-define("ODBC_PASS", 'poseidon');
+define("ODBCMYSQL", ''); 
+define('ODBC_USERMYSQL', '');
+define('ODBC_PASSMYSQL', '');
 
-define("ODBCMYSQL", 'intranet'); //ifxibgdir
-define('ODBC_USERMYSQL', 'ibg');
-define('ODBC_PASSMYSQL', 'ibgsa40');
-define("IP_FTP", "192.168.100.10");
-define("PORT_FTP", "3306");
 
 ?>
